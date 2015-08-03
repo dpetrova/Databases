@@ -1,0 +1,10 @@
+Problem 6.	Schema Normalization
+
+Data Normalization
+
+Data normalization is a process in which data attributes within a data model are organized to increase the cohesion of entity types and minimize data redundancy.  In other words, the goal of data normalization is to reduce and even eliminate data redundancy, an important consideration for application developers because it is incredibly difficult to stores objects in a relational database that maintains the same information in several places.  
+The advantage of having a highly normalized data schema is that information is stored in one place and one place only, reducing the possibility of inconsistent data. Furthermore, highly-normalized data schemas in general are closer conceptually to object-oriented schemas because the object-oriented goals of promoting high cohesion and loose coupling between classes results in similar solutions. This generally makes it easier to map your objects to your data schema.
+
+Denormalization
+
+From a purist point of view you want to normalize your data structures as much as possible, but from a practical point of view you will find that you need to 'back out" of some of your normalizations for performance reasons. This is called "denormalization". 

@@ -1,0 +1,17 @@
+Problem 2.	Which are the Main Functions Performed by a RDBMS?
+
+RDBMS is a database management system based on relational model. Data is stored in the form of rows and columns. The relations among tables are also stored in the form of the table.
+
+Features:
+
+- Provides data to be stored in tables
+- Persists data in the form of rows and columns
+- Creating / altering / deleting tables and relationships between them
+- Adding / changing / deleting / searching / retrieving of data
+- Support for the SQL language
+- Provides facility primary key, to uniquely identify the rows
+- Creates indexes for quicker data retrieval
+- Provides a virtual table creation in which sensitive data can be stored and simplified query can be applied.(views)
+- Sharing a common column in two or more tables(primary key and foreign key)
+- Provides multi user accessibility that can be controlled by individual users
+- Transaction management

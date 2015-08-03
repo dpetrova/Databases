@@ -1,0 +1,30 @@
+Problem 1.	What Database Models do You Know?
+
+A database model is a type of data model that determines the logical structure of a database and fundamentally determines in which manner data can be stored, organized, and manipulated.
+Common logical data models for databases include:
+  - Hierarchical database model
+  - Network model
+  - Relational model
+  - Entity–relationship model
+  - Enhanced entity–relationship model
+  - Object model
+  - Document model
+  - Entity–attribute–value model
+  - Star schema
+  - Associative model
+  - Multidimensional model
+  - Multivalue model
+  - Semantic model
+  - XML database
+  - Named graph
+  - Triplestore
+ 
+ 
+ Associative Model
+
+The associative model divides the real-world things about which data is to be recorded into two sorts:
+Entities are things that have discrete, independent existence. An entity’s existence does not depend on any other thing. Associations are things whose existence depends on one or more other things, such that if any of those things ceases to exist, then the thing itself ceases to exist or becomes meaningless.
+An associative database comprises two data structures:
+1. A set of items, each of which has a unique identifier, a name and a type.
+2. A set of links, each of which has a unique identifier, together with the unique identifiers of three other things, that represent the source source, verb and target of a fact that is recorded about the source in the database. Each of the three things identified by the source, verb and target may be either a link or an item.
+

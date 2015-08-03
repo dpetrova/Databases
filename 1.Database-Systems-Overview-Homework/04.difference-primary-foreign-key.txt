@@ -1,0 +1,15 @@
+Problem 4.	Difference between a Primary and Foreign Key
+
+Primary Key: 
+  - identify uniquely every row; 
+  - it can not be null; 
+  - it can not be duplicate.
+
+Foreign Key: 
+  - create relationship between two tables;
+  - can be null;
+  - can be duplicate.
+
+Primary key is a column of the table that uniquely identifies its rows (usually its is a number). Primary key allows each row in a table to be uniquely identified and ensures that no duplicate rows exist and no null values are entered.
+
+Foreign key is an identifier of a record located in another table. Foreign Key (sometimes called a referencing key) is a key used to link two tables together. Typically you take the primary key field from one table and insert it into the other table where it becomes a foreign key (it remains a primary key in the original table).

@@ -1,0 +1,15 @@
+Problem 11.	Transactions
+
+Transactions (a sequence of one or more SQL operations that are treated as a unit) are a series of data manipulation statements that must either fully complete or fully fail, leaving the database in a consistent state.
+The concept of transactions is actually motivated by two completely independent concerns. One has to do with concurrent access to the database by multiple clients and the other has to do with having a system that is resilient to system failures.
+
+Transactions ideally have four properties, commonly known as ACID:
+  - Atomic: if the change is committed, it happens in one fell swoop; you can never see "half a change";
+  - Consistent: the change can only happen if the new state of the system will be valid; any attempt to commit an invalid change will fail, leaving the system in its previous valid state;
+  - Isolated: no-one else sees any part of the transaction until it's committed;
+  - Durable: once the change has happened - if the system says the transaction has been committed, the client doesn't need to worry about "flushing" the system to make the change "stick".
+  
+Transaction log
+A transaction log (also transaction journal, database log, binary log or audit trail) is a history of actions executed by a database management system to guarantee ACID properties over crashes or hardware failures. Physically, a log is a file listing changes to the database, stored in a stable storage format.
+Every SQL Server database has a transaction log that records all transactions and the database modifications made by each transaction. The transaction log must be truncated on a regular basis to keep it from filling up. However, some factors can delay log truncation, so monitoring log size is important. Some operations can be minimally logged to reduce their impact on transaction log size.
+The transaction log is a critical component of the database and, if there is a system failure, the transaction log might be required to bring your database back to a consistent state. The transaction log should never be deleted or moved unless you fully understand the ramifications of doing this.

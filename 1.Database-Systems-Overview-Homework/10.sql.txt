@@ -1,0 +1,11 @@
+Problem 10.	SQL Language
+
+SQL (Structured Query Language)
+SQL is a standard interactive and programming language for getting information from and updating a database. Although SQL is both an ANSI and an ISO standard, many database products support SQL with proprietary extensions to the standard language. Queries take the form of a command language that lets you select, insert, update, find out the location of data, and so forth. There is also a programming interface.
+
+The following is an example of a SELECT query that returns a list of expensive books. The query retrieves all rows from the Book table in which the price column contains a value greater than 100.00. The result is sorted in ascending order by title. The asterisk (*) in the select list indicates that all columns of the Book table should be included in the result set:
+
+SELECT *
+ FROM  Book
+ WHERE price > 100.00
+ ORDER BY title;
